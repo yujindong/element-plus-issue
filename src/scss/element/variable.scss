@@ -1,0 +1,13 @@
+// we can add this to custom namespace, default is 'el'
+@forward "element-plus/theme-chalk/src/mixins/config.scss" with (
+  $namespace: "my-namespace"
+);
+
+// custom light variables
+@use "./light.scss";
+@use "element-plus/theme-chalk/src/var.scss" as *;
+
+// custom dark variables
+@use "./dark.scss";
+// import dark theme
+@use "element-plus/theme-chalk/src/dark/css-vars.scss" as *;
